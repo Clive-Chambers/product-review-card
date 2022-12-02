@@ -3,3 +3,62 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #f2ebe3;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+main.container {
+ background-color: #fff;
+ width: 90%;
+ margin: 40px auto;
+ border-radius: 8px;
+ overflow: hidden;
+}
+
+section.product-image {
+    text-align: center;
+    
+    
+}
+section.product-image .mobile-img img {
+    width: 100%;
+    
+
+}
+
+section.product-image .desktop-img img {
+    display: none;
+
+}
+
+section.product-content {
+    padding: 20px;
+}
+
+section.product-content h1, .price-div .sale-price {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+}
+
+p {
+    padding: 10px 0;
+    color: #6c7289;
+    line-height: 1.4rem;
+}
+
+.price-div {
+    display: flex;
+    align-items: center;
+}
+
+.price-div .sale-price {
+    color: #3c8067;
+}
+
+.price-div .original-price {
+    text-decoration: line-through;
+    margin-left: 15px;
+}
