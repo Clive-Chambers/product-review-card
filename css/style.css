@@ -93,3 +93,51 @@ button:hover, button:focus {
 button img {
     margin-right: 9px;
 }
+
+@media screen and (min-width: 769px) {
+    main.container {
+        display: flex;
+        max-width: 700px;
+        margin: 20vh auto;
+    }
+
+    section.product-image .mobile-img img {
+        display: none;
+        
+    
+    }
+    
+    section.product-image .desktop-img img {
+        display: block;
+        height: 60vh;
+        object-fit: cover;
+    
+    }
+
+    section.product-content {
+        padding: 30px;
+    }
+    
+    section.product-content h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        padding: 15px 10px;
+    }
+
+    .price-div .sale-price {
+        font-size: 2.5rem;
+    }
+    
+    .price-div .original-price {
+        font-size: 1rem;
+    
+    }
+
+    button {
+        margin-bottom: 0;
+    }
+}
