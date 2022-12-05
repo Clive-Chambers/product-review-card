@@ -84,6 +84,7 @@ button {
     border: none;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 button:hover, button:focus {
