@@ -23,15 +23,9 @@ section.product-image {
     
     
 }
-section.product-image .mobile-img img {
+
+picture img {
     width: 100%;
-    
-
-}
-
-section.product-image .desktop-img img {
-    display: none;
-
 }
 
 section.product-content {
@@ -69,7 +63,6 @@ p {
 }
 
 .price-div .original-price {
-    text-decoration: line-through;
     margin-left: 15px;
 }
 
@@ -87,12 +80,22 @@ button {
     cursor: pointer;
 }
 
-button:hover, button:focus {
+button:hover, button:active {
     background-color: #104a35;
+    transition: 700ms ease-in-out;
 }
 
 button img {
     margin-right: 9px;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 769px) {
@@ -101,19 +104,6 @@ button img {
         max-width: 700px;
         margin: 20vh auto;
         align-items: center;
-    }
-
-    section.product-image .mobile-img img {
-        display: none;
-        
-    
-    }
-    
-    section.product-image .desktop-img img {
-        display: block;
-        max-height: 530px;
-        object-fit: stretch;
-    
     }
 
     section.product-content {
